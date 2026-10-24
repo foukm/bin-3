@@ -9,6 +9,8 @@ updates:
     groups:
       npm_and_yarn:
         applies-to: security-updates
+        patterns:
+          - "*"
 
   - package-ecosystem: "composer"
     directory: "/"
@@ -18,3 +20,5 @@ updates:
     groups:
       composer:
         applies-to: security-updates
+        patterns:
+          - "*"
