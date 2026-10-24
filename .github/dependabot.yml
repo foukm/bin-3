@@ -1,17 +1,13 @@
 version: 2
 updates:
   - package-ecosystem: "npm"
-    directory: "/" 
+    directory: "/"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 0
     groups:
-      security-runtime:
+      npm_and_yarn:
         applies-to: security-updates
-        dependency-type: "production"
-      security-dev:
-        applies-to: security-updates
-        dependency-type: "development"
 
   - package-ecosystem: "composer"
     directory: "/"
@@ -19,9 +15,5 @@ updates:
       interval: "weekly"
     open-pull-requests-limit: 0
     groups:
-      security-runtime:
+      composer:
         applies-to: security-updates
-        dependency-type: "production"
-      security-dev:
-        applies-to: security-updates
-        dependency-type: "development"
